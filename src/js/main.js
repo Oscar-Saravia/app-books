@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', async function() {
   books.forEach(book => {
     const bookElement = `
       <div class="demo-card-wide mdl-card mdl-shadow--2dp">
-        <div class="mdl-card__title">
+        <div class="mdl-card__title" style="background: url('${book.cover}') center / cover">
           <h2 class="mdl-card__title-text" data-title="${book.title}" data-description="${book.description}">${book.title}</h2>
         </div>
       <div class="mdl-card__supporting-text">
